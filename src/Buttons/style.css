@@ -1,0 +1,24 @@
+.hidden {
+  display: none;
+}
+
+.lists__button--allDone:disabled {
+  color: hsl(0, 0%, 69%);
+}
+
+.lists__button {
+  color: hsl(187, 97%, 26%);
+  border: none;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.lists__button:hover {
+  color: hsl(185, 36%, 50%);
+}
+
+@media (max-width: 767px) {
+  .lists__button {
+    padding: 10px;
+  }
+}
