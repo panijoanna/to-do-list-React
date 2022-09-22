@@ -28,10 +28,6 @@
   border: 2px solid #e2e2e2;
 }
 
-.header__heading {
-  font-weight: 900;
-}
-
 @media (max-width: 767px) {
   .form {
     display: flex;
