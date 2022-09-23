@@ -3,7 +3,7 @@ import "./style.css";
 const Buttons = ({tasks, hideDoneTasks}) => (
     tasks.length > 0 && (
         <div className="section__buttons">
-         <button className="lists__button lists__button--hide">
+         <button className="lists__button">
              {hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
          </button>
          <button
