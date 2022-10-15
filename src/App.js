@@ -6,14 +6,14 @@ import Section from "./Section";
 import Header from "./Header";
 
 function App() {
-    const [hideDone, setHideDone] = useState(false);
+    const [hideDoneTasks, setHideDoneTasks] = useState(false);
     const [tasks, setTasks] = useState([
         { id: 1, content: "Przejść na reacta", done: true },
         { id: 2, content: "Zjeść obiad", done: true },
     ]);
 
-    const toggleHideDone = () => {
-        setHideDone(hideDone => !hideDone);
+    const hideTasks = () => {
+        setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
     };
 
     const removeTask = (id) => {
@@ -30,14 +30,14 @@ function App() {
         }));
     };
 
-    const setAllDone = () => {
+    const toggleAllTaskDone = () => {
         setTasks(tasks => tasks.map(task => ({
             ...task, 
             done: true,
         })));
     };
 
-    const addNewTask = (content) => {
+    const addTask = (content) => {
         setTasks(tasks => [
             ...tasks,
             {
@@ -53,7 +53,7 @@ function App() {
         <Header title="Lista zadań"/>
         <Section 
             title="Dodaj nowe zadanie" 
-            body={<Form addNewTask={addNewTask} />}
+            body={<Form addTask={addTask} />}
     />
 
         <Section
@@ -61,7 +61,7 @@ function App() {
             body={
                 <Tasks 
                 tasks={tasks} 
-                hideDone={hideDone} 
+                hideDoneTasks={hideDoneTasks} 
                 removeTask={removeTask}
                 toggleTaskDone={toggleTaskDone}
                 />
@@ -69,9 +69,9 @@ function App() {
             extraHeaderContent={
                 <Buttons 
                  tasks={tasks} 
-                 hideDone={hideDone} 
-                 toggleHideDone={toggleHideDone}
-                 setAllDone={setAllDone}
+                 hideDoneTasks={hideDoneTasks} 
+                 hideTasks={hideTasks}
+                 toggleAllTaskDone={toggleAllTaskDone}
                  />
             }
     />
