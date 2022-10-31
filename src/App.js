@@ -9,6 +9,10 @@ function App() {
     const [hideDoneTasks, setHideDoneTasks] = useState(false);
     const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")));
 
+    useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(tasks))
+    }, [tasks]);
+
     const hideTasks = () => {
         setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
     };
