@@ -7,7 +7,7 @@ import Header from "./Header";
 
 function App() {
     const [hideDoneTasks, setHideDoneTasks] = useState(false);
-    const [tasks, setTasks] = useState();
+    const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")));
 
     const hideTasks = () => {
         setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
