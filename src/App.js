@@ -7,10 +7,7 @@ import Header from "./Header";
 
 function App() {
     const [hideDoneTasks, setHideDoneTasks] = useState(false);
-    const [tasks, setTasks] = useState([
-        { id: 1, content: "Przejść na reacta", done: true },
-        { id: 2, content: "Zjeść obiad", done: true },
-    ]);
+    const [tasks, setTasks] = useState();
 
     const hideTasks = () => {
         setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
