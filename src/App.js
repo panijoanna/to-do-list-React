@@ -7,7 +7,10 @@ import Header from "./Header";
 
 function App() {
     const [hideDoneTasks, setHideDoneTasks] = useState(false);
-    const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")));
+
+    const tasksDataStorage = localStorage.getItem("tasks");
+
+    const [tasks, setTasks] = useState(localStorage.getItem("tasks"));
 
     useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(tasks))
@@ -18,7 +21,8 @@ function App() {
     };
 
     const removeTask = (id) => {
-        setTasks(tasks => tasks.filter(task => task.id !== id));
+        setTasks(
+            tasks => tasks.filter(task => task.id !== id));
     };
 
     const toggleTaskDone = (id) => {
