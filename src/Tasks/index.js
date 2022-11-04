@@ -2,7 +2,7 @@ import "./style.css";
 import { TasksList } from "./styled";
 
 const Tasks = ({ tasks, hideDoneTasks, removeTask, toggleTaskDone }) => (
-  <ul className="tasks">
+  <TasksList>
     {tasks.map((task) => (
       <li
         key={task.id}
@@ -29,7 +29,7 @@ const Tasks = ({ tasks, hideDoneTasks, removeTask, toggleTaskDone }) => (
         </button>
       </li>
     ))}
-  </ul>
+  </TasksList>
 );
 
 export default Tasks;
