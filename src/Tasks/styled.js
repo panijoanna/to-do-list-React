@@ -6,3 +6,12 @@ export const TasksList = styled.ul`
   padding: 0;
   word-break: break-word;
 `;
+
+export const Item = styled.li`
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+`;
