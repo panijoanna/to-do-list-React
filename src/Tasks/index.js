@@ -1,4 +1,5 @@
 import "./style.css";
+import { TasksList } from "./styled";
 
 const Tasks = ({ tasks, hideDoneTasks, removeTask, toggleTaskDone }) => (
   <ul className="tasks">
