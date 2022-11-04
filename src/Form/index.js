@@ -4,6 +4,8 @@ import "./style.css";
 const Form = ({ addTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
 
+  const inputRef = useRef(null);
+
   const onFormSubmit = (event) => {
     event.preventDefault();
     addTask(newTaskContent.trim());
@@ -14,6 +16,7 @@ const Form = ({ addTask }) => {
     <form className="form" onSubmit={onFormSubmit}>
       <input
         value={newTaskContent}
+        ref={inputRef}
         className="form__field"
         required
         type="text"
