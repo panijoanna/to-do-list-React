@@ -6,6 +6,12 @@ const Form = ({ addTask }) => {
 
   const inputRef = useRef(null);
 
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
   const onFormSubmit = (event) => {
     event.preventDefault();
     addTask(newTaskContent.trim());
