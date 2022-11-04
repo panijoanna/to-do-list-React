@@ -8,11 +8,8 @@ import Header from "./Header";
 function App() {
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
 
-  const tasksDataStorage = localStorage.getItem("tasks");
-
   const [tasks, setTasks] = useState(
-    tasksDataStorage ? JSON.parse(tasksDataStorage) : []
-  );
+   JSON.parse(localStorage.getItem("tasks")) || []);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
