@@ -29,3 +29,22 @@ export const Content = styled.span`
       text-decoration: line-through;
     `}
 `;
+
+export const Button = styled.button`
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  transition: 0.5s;
+
+  ${({toggleDone}) =>
+    toggleDone &&
+    css`
+      background: hsl(120, 61%, 39%);
+
+      &:hover {
+        background: hsl(123, 64%, 33%);
+      }
+    `}
+`;
