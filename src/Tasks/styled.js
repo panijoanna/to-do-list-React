@@ -21,3 +21,11 @@ export const Item = styled.li`
       display: none;
     `}
 `;
+
+export const Content = styled.span`
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
+    `}
+`;
