@@ -10,3 +10,7 @@ export const StyledSection = styled.section`
   border: 1px solid #e2e2e2;
   padding: 5px 20px;
 `;
+
+export const SectionHeading = styled.h3`
+  font-weight: 900;
+`;
