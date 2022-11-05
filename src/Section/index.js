@@ -1,14 +1,16 @@
-import { StyledSection, SectionHeading } from "./styled";
+import { StyledSection, SectionHeading, SectionHeader, SectionContainer } from "./styled";
 
 const Section = ({ title, body, extraHeaderContent }) => (
   <StyledSection>
-    <header className="section__header section__header--toggleButtons">
+    <SectionHeader>
       <SectionHeading>
           {title}
       </SectionHeading>
       {extraHeaderContent}
-    </header>
-    <div className="section__container">{body}</div>
+    </SectionHeader>
+    <SectionContainer>
+        {body}
+        </SectionContainer>
   </StyledSection>
 );
 
