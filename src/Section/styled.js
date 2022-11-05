@@ -19,4 +19,10 @@ export const SectionHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
 `;
