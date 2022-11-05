@@ -14,3 +14,9 @@ export const StyledSection = styled.section`
 export const SectionHeading = styled.h3`
   font-weight: 900;
 `;
+
+export const SectionHeader = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
