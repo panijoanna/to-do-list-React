@@ -21,10 +21,9 @@ const Form = ({ addTask }) => {
   return (
     <StyledForm
       onSubmit={onFormSubmit}>
-      <input
+      <Input
         value={newTaskContent}
         ref={inputRef}
-        className="form__field"
         required
         type="text"
         name="lista"
@@ -33,7 +32,9 @@ const Form = ({ addTask }) => {
         autoComplete="off"
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
-      <button className="form__button">Dodaj zadanie</button>
+      <FormButton>
+        Dodaj zadanie
+      </FormButton>
     </StyledForm>
   );
 };
