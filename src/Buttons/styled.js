@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ListsButton = styled.button `
+export const ListsButton = styled.button`
   color: hsl(187, 97%, 26%);
   border: none;
   background-color: transparent;
@@ -15,6 +15,12 @@ export const ListsButton = styled.button `
   }
 
   @media (max-width: 767px) {
-      padding: 10px;
-    }
+    padding: 10px;
+  }
+`;
+
+export const SectionButton = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 `;
