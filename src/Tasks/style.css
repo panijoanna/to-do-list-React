@@ -1,7 +1,3 @@
-.tasks__content--toggleDone {
-  text-decoration: line-through;
-}
-
 .tasks__button {
   border: none;
   color: white;
