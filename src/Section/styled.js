@@ -21,8 +21,16 @@ export const SectionHeader = styled.header`
   align-items: center;
 
   @media (max-width: 767px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+`;
+
+export const SectionContainer = styled.div`
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `;
