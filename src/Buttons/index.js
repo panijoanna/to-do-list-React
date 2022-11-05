@@ -1,8 +1,8 @@
-import { ListsButton } from "./styled";
+import { ListsButton, SectionButton } from "./styled";
 
 const Buttons = ({ tasks, hideDoneTasks, hideTasks, toggleAllTaskDone }) =>
   tasks.length > 0 && (
-    <div className="section__buttons">
+    <SectionButton>
       <ListsButton 
         onClick={hideTasks} 
         >
@@ -14,7 +14,7 @@ const Buttons = ({ tasks, hideDoneTasks, hideTasks, toggleAllTaskDone }) =>
       >
         Ukończ wszystkie
       </ListsButton>
-    </div>
+    </SectionButton>
   );
 
 export default Buttons;
