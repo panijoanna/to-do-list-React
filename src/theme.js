@@ -14,6 +14,6 @@ export const theme = {
         chartreuse: "#2BB42B",
         crimson: "#DB143C",
         coral: "#FC3545",
-        amaranth: "#EC365A";
+        amaranth: "#EC365A"
     }
 };
