@@ -1,0 +1,23 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #eeeeee;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 900px;
+  }
+  
+`;
