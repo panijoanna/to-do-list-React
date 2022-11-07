@@ -20,7 +20,7 @@ export const SectionHeader = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -28,7 +28,7 @@ export const SectionHeader = styled.header`
 `;
 
 export const SectionContainer = styled.div`
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

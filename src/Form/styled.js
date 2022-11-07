@@ -5,7 +5,7 @@ export const StyledForm = styled.form`
   justify-content: space-between;
   display: flex;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -35,7 +35,7 @@ export const FormButton = styled.button`
     transform: scale(1.1);
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     width: 100%;
     margin: 10px 0;
   }
