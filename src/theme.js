@@ -17,6 +17,6 @@ export const theme = {
         amaranth: "#EC365A"
     },
     breakpoint: {
-        mobile: 767,
+        mobileDevice: 767,
     },
 };
