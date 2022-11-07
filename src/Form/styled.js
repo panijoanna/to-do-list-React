@@ -21,8 +21,8 @@ export const Input = styled.input`
 `;
 
 export const FormButton = styled.button`
-  background-color: #027381;
-  color: #fff;
+  background-color: ${({ theme }) => theme.color.skobeloff};
+  color: ${({ theme }) => theme.color.white};
   padding: 10px;
   margin-left: 20px;
   border: none;
@@ -31,7 +31,7 @@ export const FormButton = styled.button`
   transition: 0.5s;
 
   &:hover {
-    background: hsl(187, 100%, 31%);
+    background: ${({ theme }) => theme.color.cerulean};
     transform: scale(1.1);
   }
 

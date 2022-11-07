@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const ListsButton = styled.button`
-  color: hsl(187, 97%, 26%);
+  color: ${({ theme }) => theme.color.lagoon};
   border: none;
   background-color: transparent;
   transition: 0.5s;
 
   &:hover {
-    color: hsl(185, 36%, 50%);
+    color: ${({ theme }) => theme.color.blue};
   }
 
   &:disabled {
-    color: hsl(0, 0%, 69%);
+    color: ${({ theme }) => theme.color.silver};
   }
 
   @media (max-width: 767px) {

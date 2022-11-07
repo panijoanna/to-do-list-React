@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-  background-color: white;
+  background-color: ${({ theme }) => theme.color.white};
   box-shadow: 0 2px #eee;
   display: flex;
   flex-direction: column;

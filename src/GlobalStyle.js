@@ -12,7 +12,7 @@ html {
   }
   
   body {
-    background-color: #eeeeee;
+    background-color: ${({ theme }) => theme.color.galery};
     font-family: "Lato", sans-serif;
     font-size: 18px;
     margin: 0 auto;
