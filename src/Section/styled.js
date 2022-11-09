@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   background-color: ${({ theme }) => theme.color.white};
-  box-shadow: 0 2px #eee;
+  box-shadow: 0 2px ${({ theme }) => theme.color.galery};
   display: flex;
   flex-direction: column;
   max-width: 900px;
   margin: 10px 0;
-  border: 1px solid #e2e2e2;
+  border: 1px solid ${({ theme }) => theme.color.mercury};
   padding: 5px 20px;
 `;
 
