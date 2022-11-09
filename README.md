@@ -13,7 +13,7 @@ https://panijoanna.github.io/to-do-list-React/
 1. HTML
 2. CSS
 3. Javascript/ES6
-4. React
+4. React (useState, useEffect, useRef, custom hooks, localStorage, functional components, styled components, npm, webpack)
 5. GIT
 
 ## ✅ Available Scripts 
