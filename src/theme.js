@@ -10,7 +10,7 @@ export const theme = {
         galery: "#eee",
         alto: "#ddd",
         forest: "#26A026",
-        green: "#1E8A23",
+        green: "#1E8A24",
         chartreuse: "#2BB42B",
         crimson: "#DB143C",
         coral: "#FC3545",
