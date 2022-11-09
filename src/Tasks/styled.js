@@ -13,7 +13,7 @@ export const Item = styled.li`
   grid-gap: 10px;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid ${({ theme }) => theme.color.alto};
 
   ${({ hidden }) =>
     hidden &&
@@ -51,7 +51,7 @@ export const Button = styled.button`
         background: hsl(120, 61%, 44%);
       }
     `}
-    
+
   ${({ remove }) =>
     remove &&
     css`
