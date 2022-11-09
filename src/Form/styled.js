@@ -9,6 +9,7 @@ export const StyledForm = styled.form`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
   }
 `;
 
