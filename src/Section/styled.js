@@ -23,14 +23,12 @@ export const SectionHeader = styled.header`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 `;
 
 export const SectionContainer = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 5px 0;
   }
 `;
