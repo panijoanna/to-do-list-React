@@ -17,7 +17,7 @@ export const Input = styled.input`
   width: 100%;
   display: flex;
   align-self: center;
-  border: 2px solid #e2e2e2;
+  border: 2px solid ${({ theme }) => theme.color.mercury};
 `;
 
 export const FormButton = styled.button`
