@@ -35,7 +35,6 @@ export const Button = styled.button`
   color: white;
   width: 30px;
   height: 30px;
-  padding: 0;
   transition: 0.5s;
 
   ${({ toggleDone }) =>
