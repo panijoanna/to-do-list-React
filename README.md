@@ -10,11 +10,14 @@ Here is my demo:
 https://panijoanna.github.io/to-do-list-React/
 
 ## ✅ Technologies 🛠
-1. HTML
-2. CSS
-3. Javascript/ES6
-4. React
+1. Accessible & semantic HTML, Markdown
+2. CSS (BEM convention, Flexbox, Grid)
+3. Javascript/ES6 + features (immutability)
+4. React (hooks: useState, useEffect, useRef, custom hooks, localStorage, functional components, styled components, npm, webpack)
 5. GIT
+
+## ✅ Instruction
+![todolist gif](https://user-images.githubusercontent.com/105354955/202869873-8f8128dc-ffee-4a31-bd03-2c0ade919311.gif)
 
 ## ✅ Available Scripts 
 
