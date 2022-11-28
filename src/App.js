@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Form from "./features/tasks/Form";
-import Tasks from "./Tasks";
+import Tasks from "./features/tasks/Tasks";
 import Buttons from "./features/tasks/Buttons";
 import Section from "./common/Section";
 import Header from "./common/Header";
