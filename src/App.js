@@ -2,7 +2,7 @@ import { useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
-import Section from "./Section";
+import Section from "./common/Section";
 import Header from "./common/Header";
 import { useTasks } from "./useTasks";
 
