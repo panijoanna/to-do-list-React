@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Form from "./features/tasks/Form";
-import Tasks from "./features/tasks/Tasks";
-import Buttons from "./features/tasks/Buttons";
-import Section from "./common/Section";
-import Header from "./common/Header";
-import { useTasks } from "./useTasks";
+import Form from "./Form";
+import TaskList from "./Tasks";
+import Buttons from "./Buttons";
+import Section from "../../common/Section";
+import Header from "../../common/Header";
+import { useTasks } from "../../useTasks";
 
 function App() {
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
@@ -27,7 +27,7 @@ function App() {
       <Section
         title="Lista zadań"
         body={
-          <Tasks
+          <TaskList
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}
             removeTask={removeTask}
