@@ -5,5 +5,9 @@ const tasksSlice = createSlice({
     initialState: {
         tasks: [],
     },
-    
+    reducers: {
+        addTask: ({ tasks }, { payload }) => {
+            tasks.push(payload);
+        },
+    },
 });
