@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { GlobalStyle } from './GlobalStyle';
 import { theme } from './theme';
 import { ThemeProvider } from 'styled-components';
+import store from "./store.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
