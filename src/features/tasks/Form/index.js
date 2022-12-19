@@ -20,6 +20,12 @@ const Form = ({ addTask }) => {
     event.preventDefault();
     addTask(newTaskContent.trim());
     setNewTaskContent("");
+
+    dispatch(addTask({
+      content: newTaskContent.trim(),
+      done: false,
+      id: nanoid(),
+    }));
   };
 
   return (
