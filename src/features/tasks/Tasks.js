@@ -17,7 +17,7 @@ function Tasks() {
 
   const { tasks } = useSelector(selectTasks);
 
-  const { tasks, removeTask, toggleAllTaskDone, toggleTaskDone, addTask } =
+  const { removeTask, toggleAllTaskDone, toggleTaskDone, addTask } =
     useTasks();
 
   return (
