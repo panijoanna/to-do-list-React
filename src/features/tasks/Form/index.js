@@ -5,6 +5,8 @@ import { useDispatch } from "react-redux";
 const Form = ({ addTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
 
+  const dispatch = useDispatch();
+
   const inputRef = useRef(null);
 
   useEffect(() => {
