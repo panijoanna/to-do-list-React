@@ -6,7 +6,7 @@ const TaskList = ({ removeTask }) => {
 
   const tasks = useSelector(selectTasks);
   const hideDoneTasks = useSelector(selectHideDoneTasks);
-  
+
   const dispatch = useDispatch();
 
   return (
@@ -17,7 +17,7 @@ const TaskList = ({ removeTask }) => {
             {task.done ? "✓" : ""}
           </Button>
           <Content done={task.done}>{task.content}</Content>
-          <Button remove onClick={() => removeTask(task.id)}>
+          <Button remove onClick={() => dispatch(removeTask(task.id))}>
             🗑
           </Button>
         </Item>
