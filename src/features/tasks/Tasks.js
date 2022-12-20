@@ -34,7 +34,6 @@ function Tasks() {
         extraHeaderContent={
           <Buttons
             tasks={tasks}
-            hideDoneTasks={hideDoneTasks}
             hideTasks={hideTasks}
             toggleAllTaskDone={toggleAllTaskDone}
           />
