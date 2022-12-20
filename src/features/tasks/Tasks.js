@@ -8,14 +8,13 @@ import { useSelector } from "react-redux";
 import { selectTasks } from "./tasksSlice";
 
 function Tasks() {
-  const { tasks } = useSelector(selectTasks);
 
   const { removeTask, toggleAllTaskDone, toggleTaskDone, addTask } = useTasks();
 
   return (
     <>
       <Header title="Lista zadań" />
-      <Section title="Dodaj nowe zadanie" body={<Form addTask={addTask} />} />
+      <Section title="Dodaj nowe zadanie" body={<Form/>} />
 
       <Section
         title="Lista zadań"
