@@ -1,21 +1,22 @@
 import { ListsButton, SectionButton } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 
-const Buttons = ({ tasks, hideDoneTasks, hideTasks, toggleAllTaskDone }) =>
-  tasks.length > 0 && (
-    <SectionButton>
-      <ListsButton 
-        onClick={hideTasks} 
+const Buttons = ({ tasks, hideDoneTasks, hideTasks, toggleAllTaskDone }) => {
+  return (
+    tasks.length > 0 && (
+      <SectionButton>
+        <ListsButton onClick={hideTasks}>
+          {hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
+        </ListsButton>
+        <ListsButton
+          onClick={toggleAllTaskDone}
+          disabled={tasks.every(({ done }) => done)}
         >
-        {hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
-      </ListsButton>
-      <ListsButton
-        onClick={toggleAllTaskDone}
-        disabled={tasks.every(({ done }) => done)}
-      >
-        Ukończ wszystkie
-      </ListsButton>
-    </SectionButton>
+          Ukończ wszystkie
+        </ListsButton>
+      </SectionButton>
+    )
   );
+};
 
 export default Buttons;
