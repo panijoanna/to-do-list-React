@@ -25,8 +25,6 @@ function Tasks() {
         title="Lista zadań"
         body={
           <TaskList
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
           />
         }
         extraHeaderContent={
