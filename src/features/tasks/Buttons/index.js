@@ -8,7 +8,7 @@ const Buttons = ({ toggleAllTaskDone }) => {
   return (
     tasks.length > 0 && (
       <SectionButton>
-        <ListsButton onClick={hideTasks}>
+        <ListsButton onClick={() => dispatch(hideTasks())}>
           {hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
         </ListsButton>
         <ListsButton
