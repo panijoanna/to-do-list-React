@@ -6,13 +6,10 @@ import Header from "../../common/Header";
 import { useTasks } from "../../useTasks";
 
 function Tasks() {
-
-  const { removeTask, toggleAllTaskDone, toggleTaskDone, addTask } = useTasks();
-
   return (
     <>
       <Header title="Lista zadań" />
-      <Section title="Dodaj nowe zadanie" body={<Form/>} />
+      <Section title="Dodaj nowe zadanie" body={<Form />} />
 
       <Section
         title="Lista zadań"
