@@ -7,8 +7,8 @@ const tasksSlice = createSlice({
     hideDoneTasks: false,
   },
   reducers: {
-    addTask: ({ tasks }, { payload }) => {
-      tasks.push(payload);
+    addTask: ({ tasks }, { payload: task }) => {
+      tasks.push(task);
     },
     hideTasks: (state) => {
       state.hideDoneTasks = !state.hideDoneTasks;
