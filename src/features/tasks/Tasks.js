@@ -27,7 +27,6 @@ function Tasks() {
         body={
           <TaskList
             tasks={tasks}
-            hideDoneTasks={hideDoneTasks}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
           />
