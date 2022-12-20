@@ -19,7 +19,7 @@ const areTasksDone = useSelector(selectEveryDoneTasks);
         </ListsButton>
         <ListsButton
           onClick={toggleAllTaskDone}
-          disabled={tasks.every(({ done }) => done)}
+          disabled={areTasksDone}
         >
           Ukończ wszystkie
         </ListsButton>
