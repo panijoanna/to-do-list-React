@@ -1,7 +1,7 @@
 import { ListsButton, SectionButton } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 
-const Buttons = ({ tasks, hideDoneTasks, hideTasks, toggleAllTaskDone }) => {
+const Buttons = ({ toggleAllTaskDone }) => {
   return (
     tasks.length > 0 && (
       <SectionButton>
