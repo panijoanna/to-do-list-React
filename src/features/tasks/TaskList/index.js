@@ -1,4 +1,5 @@
 import { List, Item, Content, Button } from "./styled";
+import { useSelector } from "react-redux";
 
 const TaskList = ({ removeTask, toggleTaskDone }) => (
   <List>
