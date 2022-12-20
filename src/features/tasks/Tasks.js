@@ -9,12 +9,6 @@ import { useSelector } from "react-redux";
 import { selectTasks } from "./tasksSlice";
 
 function Tasks() {
-  const [hideDoneTasks, setHideDoneTasks] = useState(false);
-
-  const hideTasks = () => {
-    setHideDoneTasks((hideDoneTasks) => !hideDoneTasks);
-  };
-
   const { tasks } = useSelector(selectTasks);
 
   const { removeTask, toggleAllTaskDone, toggleTaskDone, addTask } =
