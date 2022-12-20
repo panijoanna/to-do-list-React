@@ -18,7 +18,7 @@ const areTasksDone = useSelector(selectEveryDoneTasks);
           {hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
         </ListsButton>
         <ListsButton
-          onClick={toggleAllTaskDone}
+          onClick={() => dispatch(toggleAllTaskDone())}
           disabled={areTasksDone}
         >
           Ukończ wszystkie
