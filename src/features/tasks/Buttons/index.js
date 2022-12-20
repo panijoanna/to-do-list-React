@@ -16,19 +16,21 @@ const Buttons = ({ toggleAllTaskDone }) => {
   const dispatch = useDispatch();
 
   return (
-    tasks.length > 0 && (
-      <SectionButton>
-        <ListsButton onClick={() => dispatch(hideTasks())}>
-          {hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
-        </ListsButton>
-        <ListsButton
-          onClick={() => dispatch(toggleAllTaskDone())}
-          disabled={areTasksDone}
-        >
-          Ukończ wszystkie
-        </ListsButton>
-      </SectionButton>
-    )
+    <>
+      {!areTasksEmpty && (
+        <SectionButton>
+          <ListsButton onClick={() => dispatch(hideTasks())}>
+            {hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
+          </ListsButton>
+          <ListsButton
+            onClick={() => dispatch(toggleAllTaskDone())}
+            disabled={areTasksDone}
+          >
+            Ukończ wszystkie
+          </ListsButton>
+        </SectionButton>
+      )}
+    </>
   );
 };
 
