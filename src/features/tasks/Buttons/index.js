@@ -1,14 +1,18 @@
 import { ListsButton, SectionButton } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, hideTasks, selectEmptyTasks, selectEveryDoneTasks, selectHideDoneTasks } from "../tasksSlice.js";
+import {
+  selectTasks,
+  hideTasks,
+  selectEmptyTasks,
+  selectEveryDoneTasks,
+  selectHideDoneTasks,
+} from "../tasksSlice.js";
 
 const Buttons = ({ toggleAllTaskDone }) => {
+  const hideDoneTasks = useSelector(selectHideDoneTasks);
+  const areTasksEmpty = useSelector(selectEmptyTasks);
+  const areTasksDone = useSelector(selectEveryDoneTasks);
 
-const hideDoneItemTasks = useSelector(selectHideDoneTasks);
-const areTasksEmpty = useSelector(selectEmptyTasks);
-const areTasksDone = useSelector(selectEveryDoneTasks);
-
-  const { tasks, hideDoneTasks } = useSelector(selectTasks);
   const dispatch = useDispatch();
 
   return (
