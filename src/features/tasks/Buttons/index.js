@@ -1,7 +1,6 @@
 import { ListsButton, SectionButton } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import {
-  selectTasks,
   hideTasks,
   selectEmptyTasks,
   selectEveryDoneTasks,
