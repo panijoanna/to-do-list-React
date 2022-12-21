@@ -6,9 +6,10 @@ import {
   selectEmptyTasks,
   selectEveryDoneTasks,
   selectHideDoneTasks,
+  toggleAllTaskDone,
 } from "../tasksSlice.js";
 
-const Buttons = ({ toggleAllTaskDone }) => {
+const Buttons = () => {
   const hideDoneTasks = useSelector(selectHideDoneTasks);
   const areTasksEmpty = useSelector(selectEmptyTasks);
   const areTasksDone = useSelector(selectEveryDoneTasks);
