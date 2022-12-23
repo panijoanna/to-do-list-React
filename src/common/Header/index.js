@@ -2,9 +2,7 @@ import { Heading } from "./styled";
 
 const Header = ({ title }) => (
   <header className="header">
-    <Heading>
-      {title}
-    </Heading>
+    <Heading>{title}</Heading>
   </header>
 );
 
