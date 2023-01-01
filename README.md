@@ -15,7 +15,7 @@ https://panijoanna.github.io/to-do-list-React/
 3. Javascript/ES6 + features (immutability)
 4. React (hooks: useState, useEffect, useRef, custom hooks, localStorage, functional components, styled components, npm, webpack)
 5. Redux (hooks: useSelector, useDispatch, selectors, dispatch, reducers)
-6. GIT
+6. GIT (basic Git version control system commands)
 
 ## ✅ Instruction
 ![todolist gif](https://user-images.githubusercontent.com/105354955/202869873-8f8128dc-ffee-4a31-bd03-2c0ade919311.gif)
