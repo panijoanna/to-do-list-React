@@ -20,6 +20,10 @@ https://panijoanna.github.io/to-do-list-React/
 ## ✅ Instruction
 ![todolist gif](https://user-images.githubusercontent.com/105354955/202869873-8f8128dc-ffee-4a31-bd03-2c0ade919311.gif)
 
+## ✅ Presentation
+![share](https://user-images.githubusercontent.com/105354955/211157518-5d92a79d-e056-4016-803e-23f43ac1f990.png)
+
+
 ## ✅ Available Scripts 
 
 In the project directory, you can run:
