@@ -4,5 +4,10 @@ import { fetchExampleTasks } from "./tasksSlice";
 import { setTasks } from "./tasksSlice";
 
 function* fetchExampleTasksHandler() {
-    
+  try {
+    const exampleTasks = yield call(getExampleTasks);
+    yield put(setTasks(exampleTasks));
+  } catch (error) {
+    yield call(alert, "Coś poszło nie tak");
+  }
 }
