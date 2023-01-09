@@ -5,8 +5,13 @@ import rootSaga from "./rootSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 
-export default configureStore({
+const store = configureStore({
   reducer: {
     tasks: tasksReducer,
   },
+  middleware: [sagaMiddleware],
 });
+
+sagaMiddleware.run(rootSaga);
+
+export default store;
