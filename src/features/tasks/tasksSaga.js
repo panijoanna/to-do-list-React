@@ -11,3 +11,7 @@ function* fetchExampleTasksHandler() {
     yield call(alert, "Coś poszło nie tak");
   }
 }
+
+export function* watchFetchExampleTasks() {
+  yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
+}
