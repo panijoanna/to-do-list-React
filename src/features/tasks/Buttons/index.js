@@ -18,7 +18,7 @@ const Buttons = () => {
 
   return (
     <>
-      <ListsButton onClick={() => dispatch(fetchExampleTasks())}></ListsButton>
+      <ListsButton onClick={() => dispatch(fetchExampleTasks())}>Pobierz przykładowe zadania</ListsButton>
       {!areTasksEmpty && (
         <SectionButton>
           <ListsButton onClick={() => dispatch(hideTasks())}>
