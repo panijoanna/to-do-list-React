@@ -12,6 +12,6 @@ function* fetchExampleTasksHandler() {
   }
 }
 
-export function* watchFetchExampleTasks() {
+export function* tasksSaga() {
   yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
 }
