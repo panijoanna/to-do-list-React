@@ -16,7 +16,7 @@ export const NavUl = styled.ul`
 
 export const NavLists = styled.li`
   font-size: 14px;
-  padding: 10px;
+  padding: 5px;
 `;
 
 export const NavigationLink = styled(NavLink)`
