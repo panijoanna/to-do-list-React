@@ -12,3 +12,7 @@ export const NavUl = styled.ul`
   flex-direction: row;
   justify-content: center;
 `;
+
+export const NavLists = styled.li`
+
+`;
