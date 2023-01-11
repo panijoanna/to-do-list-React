@@ -12,6 +12,7 @@ export const NavUl = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 20px;
   padding: 0;
   margin: 0 auto;
 `;
@@ -24,5 +25,4 @@ export const NavLists = styled.li`
 export const NavigationLink = styled(NavLink)`
   text-decoration: none;
   color: ${({ theme }) => theme.color.white};
-  padding-left: 20px;
 `;
