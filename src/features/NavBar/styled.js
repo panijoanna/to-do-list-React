@@ -20,6 +20,6 @@ export const NavLists = styled.li`
 `;
 
 export const NavigationLink = styled(NavLink)`
-  font-weight: bold;
   text-decoration: none;
+  color: ${({ theme }) => theme.color.white};
 `;
