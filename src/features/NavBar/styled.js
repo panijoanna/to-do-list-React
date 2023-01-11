@@ -5,3 +5,7 @@ export const StyledNavigation = styled.nav`
   color: white;
   padding: 5px;
 `;
+
+export const NavUl = styled.ul`
+
+`;
