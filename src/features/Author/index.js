@@ -1,4 +1,9 @@
-import { NavigationLink, NavLists, StyledNavigation, NavUl } from "../NavBar/styled";
+import {
+  NavigationLink,
+  NavLists,
+  StyledNavigation,
+  NavUl,
+} from "../NavBar/styled";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
 
@@ -16,7 +21,17 @@ const Author = () => {
         </NavUl>
       </StyledNavigation>
       <Header title="O autorze"></Header>
-      <Section title="Joanna Panimasz" body={<>Mam na imię Asia. Zafascynowana technologiami frontendowymi. Z wykształcenia rekruterka. Japońskie sztuki walki to moje hobby. Trenuję karate. W przyszłości chciałabym polecieć do Japonii i zjeść prawdziwy ramen.</>}></Section>
+      <Section
+        title="Joanna Panimasz"
+        body={
+          <>
+            Mam na imię Asia. Zafascynowana technologiami frontendowymi. Z
+            wykształcenia rekruterka. Japońskie sztuki walki to moje hobby.
+            Trenuję karate. W przyszłości chciałabym polecieć do Japonii i zjeść
+            prawdziwy ramen.
+          </>
+        }
+      ></Section>
     </>
   );
 };
