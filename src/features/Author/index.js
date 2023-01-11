@@ -16,7 +16,7 @@ const Author = () => {
         </NavUl>
       </StyledNavigation>
       <Header title="O autorze"></Header>
-      <Section title="Joanna Panimasz" body={<>Hello</>}></Section>
+      <Section title="Joanna Panimasz" body={<>Mam na imię Asia. Zafascynowana technologiami frontendowymi. Z wykształcenia rekruterka. Japońskie sztuki walki to moje hobby. Trenuję karate. W przyszłości chciałabym polecieć do Japonii i zjeść prawdziwy ramen.</>}></Section>
     </>
   );
 };
