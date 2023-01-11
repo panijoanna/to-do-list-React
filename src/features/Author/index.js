@@ -1,4 +1,6 @@
-import { NavigationLink, NavLists, StyledNavigation } from "../NavBar/styled";
+import { NavigationLink, NavLists, StyledNavigation, NavUl } from "../NavBar/styled";
+import Header from "../../common/Header";
+import Section from "../../common/Section";
 
 const Author = () => {
   return (
