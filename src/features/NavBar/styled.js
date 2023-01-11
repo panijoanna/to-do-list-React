@@ -7,5 +7,8 @@ export const StyledNavigation = styled.nav`
 `;
 
 export const NavUl = styled.ul`
-
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `;
