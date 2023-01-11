@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const StyledNavigation = styled.nav`
-  background-color: #027381;
+  background-color: ${({ theme }) => theme.color.skobeloff};
   color: white;
   padding: 5px;
 `;
@@ -21,4 +21,5 @@ export const NavLists = styled.li`
 
 export const NavigationLink = styled(NavLink)`
   font-weight: bold;
+  text-decoration: none;
 `;
