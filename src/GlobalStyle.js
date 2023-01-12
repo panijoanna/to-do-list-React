@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   
   body {
     background-color: ${({ theme }) => theme.color.galery};
-    font-family: "Lato", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin: 0 auto;
   }
