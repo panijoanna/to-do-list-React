@@ -1,14 +1,14 @@
 import Form from "./Form";
-import TaskList from "./TaskList";
+import TaskList from "./TasksPage/TaskList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import NavBar from "../NavBar";
+import Navigation from "../../Navigation";
 
 function Tasks() {
   return (
     <>
-      <NavBar />
+      <Navigation />
       <Header title="Lista zadań" />
       <Section title="Dodaj nowe zadanie" body={<Form />} />
       <Section

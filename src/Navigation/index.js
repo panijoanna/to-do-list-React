@@ -1,6 +1,6 @@
 import { NavigationLink, NavLists, NavUl, StyledNavigation } from "./styled";
 
-const NavBar = () => {
+const Navigation = () => {
   return (
     <StyledNavigation>
       <NavUl>
@@ -13,4 +13,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navigation;

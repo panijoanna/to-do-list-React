@@ -3,7 +3,7 @@ import {
   NavLists,
   StyledNavigation,
   NavUl,
-} from "../NavBar/styled";
+} from "../../Navigation/styled";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
 
