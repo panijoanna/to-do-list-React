@@ -33,7 +33,9 @@ export const SectionHeader = styled.header`
 `;
 
 export const SectionContainer = styled.div`
+  padding: 0 5px 10px 5px;
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
-    padding: 10px 0;
+    padding: 0 5px 10px 5px;
   }
 `;
