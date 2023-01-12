@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const StyledNavigation = styled.nav`
@@ -21,6 +21,15 @@ export const NavUl = styled.ul`
 export const NavLists = styled.li`
   font-size: 14px;
   padding: 5px;
+
+  ${({ bolded }) =>
+    bolded &&
+    css`
+      font-weight: bold;
+    `}
+
+  &:hover {
+    filter: brightness(90%); 
 `;
 
 export const NavigationLink = styled(NavLink)`
