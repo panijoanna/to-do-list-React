@@ -16,7 +16,7 @@ export const StyledSection = styled.section`
 `;
 
 export const SectionHeading = styled.h3`
-  font-weight: 900;
+  font-weight: 700;
 `;
 
 export const SectionHeader = styled.header`
