@@ -6,7 +6,7 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 1px solid ${({ theme }) => theme.color.mercury};
   padding: 5px 20px;
 
