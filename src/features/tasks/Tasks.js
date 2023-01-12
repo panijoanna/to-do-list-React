@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Navigation from "../../Navigation";
+import SearchInput from "./SearchInput";
 
 function Tasks() {
   return (
