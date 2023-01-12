@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 export const StyledNavigation = styled.nav`
   background-color: ${({ theme }) => theme.color.skobeloff};
   color: white;
-  padding: 5px;
+  padding: 10px 0;
+  width: 100%;
 `;
 
 export const NavUl = styled.ul`
