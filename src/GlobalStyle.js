@@ -16,8 +16,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Lato", sans-serif;
     font-size: 18px;
     margin: 0 auto;
-    padding: 50px;
-    max-width: 900px;
   }
   
 `;
