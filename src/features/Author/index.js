@@ -21,8 +21,8 @@ const Author = () => {
         </NavUl>
       </StyledNavigation>
       <Header title="O autorze"></Header>
+      <Section title="Joanna Panimasz"></Section>
       <Section
-        title="Joanna Panimasz"
         body={
           <>
             Mam na imię Asia. Zafascynowana technologiami frontendowymi. Z
