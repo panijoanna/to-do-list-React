@@ -12,6 +12,7 @@ function Tasks() {
       <Navigation />
       <Header title="Lista zadań" />
       <Section title="Dodaj nowe zadanie" body={<Form />} />
+      <Section title="Wyszukiwarka" body={<SearchInput />} />
       <Section
         title="Lista zadań"
         body={<TaskList />}
