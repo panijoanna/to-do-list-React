@@ -6,9 +6,13 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  margin: 10px 0;
+  margin: 0 auto;
   border: 1px solid ${({ theme }) => theme.color.mercury};
   padding: 5px 20px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
+    max-width: 90%;
+  }
 `;
 
 export const SectionHeading = styled.h3`
