@@ -6,7 +6,7 @@ const Navigation = () => {
       <NavUl>
         <NavLists bolded>Zadania</NavLists>
         <NavLists>
-          <NavigationLink to="/o autorze">O autorze</NavigationLink>
+          <NavigationLink to="/o-autorze">O autorze</NavigationLink>
         </NavLists>
       </NavUl>
     </StyledNavigation>
