@@ -7,8 +7,8 @@ const Button = () => {
   const loading = useSelector(load);
 
   return (
-    <ListsButton onClick={() => dispatch(fetchExampleTasks())}>
-      Pobierz przykładowe zadania
+    <ListsButton disabled={loading} onClick={() => dispatch(fetchExampleTasks())}>
+      {loading ? "Trwa ładowanie..." : "Pobierz przykładowe zadania"}
     </ListsButton>
   );
 };
