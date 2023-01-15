@@ -1,4 +1,4 @@
-import { fetchExampleTasks } from "../../tasks/tasksSlice";
+import { fetchExampleTasks, load } from "../../tasks/tasksSlice";
 import { useDispatch } from "react-redux";
 import { ListsButton } from "../../tasks/Buttons/styled";
 
