@@ -31,6 +31,9 @@ const tasksSlice = createSlice({
     fetchExampleTasks: state => { 
       state.loading = true;
     },
+    fetchExampleSuccess: (state, {payload: tasks}) => {
+      
+    }
   },
 });
 
