@@ -4,14 +4,19 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Navigation from "../../Navigation";
-import SearchInput from "./SearchInput";
+import SearchInput from "../taskFilter/SearchInput";
+import Button from "../taskFilter/Button";
 
 function Tasks() {
   return (
     <>
       <Navigation />
       <Header title="Lista zadań" />
-      <Section title="Dodaj nowe zadanie" body={<Form />} />
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form />}
+        extraHeaderContent={<Button />}
+      />
       <Section title="Wyszukiwarka" body={<SearchInput />} />
       <Section
         title="Lista zadań"
