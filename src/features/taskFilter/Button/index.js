@@ -4,6 +4,8 @@ import { ListsButton } from "../../tasks/Buttons/styled";
 
 const Button = () => {
   const dispatch = useDispatch();
+  const loading = useSelector(load);
+
   return (
     <ListsButton onClick={() => dispatch(fetchExampleTasks())}>
       Pobierz przykładowe zadania
