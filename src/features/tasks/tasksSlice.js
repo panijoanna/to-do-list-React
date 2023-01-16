@@ -63,7 +63,7 @@ export const selectEveryDoneTasks = (state) =>
   selectTasks(state).every(({ done }) => done);
 
   export const selectTaskByQuery = (state, query) => {
-    
+    const tasks = selectTasks(state);
   }
 
 export const load = (state) => selectTasksState(state).loading;
