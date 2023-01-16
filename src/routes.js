@@ -1,0 +1,1 @@
+export const toTask = () => "/to-do-list-React";
