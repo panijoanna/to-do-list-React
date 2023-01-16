@@ -62,13 +62,16 @@ export const selectEmptyTasks = (state) => selectTasks(state).length === 0;
 export const selectEveryDoneTasks = (state) =>
   selectTasks(state).every(({ done }) => done);
 
-  export const selectTaskByQuery = (state, query) => {
-    const tasks = selectTasks(state);
+export const selectTaskByQuery = (state, query) => {
+  const tasks = selectTasks(state);
 
-    if (!query || query.trim() === "") {
-      return tasks;
-    }
+  if (!query || query.trim() === "") {
+    return tasks;
   }
+  return selectTasks(state).filter(({ content }) =>
+    content.toUpperCase().includes(query.trim().toUpperCase())
+  );
+};
 
 export const load = (state) => selectTasksState(state).loading;
 export default tasksSlice.reducer;
