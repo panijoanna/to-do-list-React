@@ -7,5 +7,6 @@ export const useQueryParameter = () => {
 };
 
 export const useReplaceQueryParameter = () => {
-    
+    const location = useLocation();
+    const navigate = useNavigate();
 };
