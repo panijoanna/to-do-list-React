@@ -18,5 +18,8 @@ export const useReplaceQueryParameter = () => {
     } else {
       searchParams.set(key, value);
     }
+
+    const newSearch = searchParams.toString();
+    navigate(`${location.pathname}?${newSearch}`;)
   };
 };
