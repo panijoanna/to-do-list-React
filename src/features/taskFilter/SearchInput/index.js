@@ -20,6 +20,8 @@ const SearchInput = () => {
       required
       placeholder="🔍Wyszukaj w liście zadań"
       autoComplete="off"
+      onChange={onInputChange}
+      value={query || ""}
     />
   );
 };
