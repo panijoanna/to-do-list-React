@@ -2,7 +2,6 @@ import { List, Item, Content, Button } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectHideDoneTasks,
-  selectTasks,
   toggleTaskDone,
   removeTask,
   selectTaskByQuery,
