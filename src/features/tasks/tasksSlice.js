@@ -62,5 +62,9 @@ export const selectEmptyTasks = (state) => selectTasks(state).length === 0;
 export const selectEveryDoneTasks = (state) =>
   selectTasks(state).every(({ done }) => done);
 
+  export const selectTaskByQuery = (state, query) => {
+    
+  }
+
 export const load = (state) => selectTasksState(state).loading;
 export default tasksSlice.reducer;
