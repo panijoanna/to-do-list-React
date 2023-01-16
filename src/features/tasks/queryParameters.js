@@ -20,6 +20,6 @@ export const useReplaceQueryParameter = () => {
     }
 
     const newSearch = searchParams.toString();
-    navigate(`${location.pathname}?${newSearch}`;)
+    navigate(`${location.pathname}?${newSearch}`);
   };
 };
