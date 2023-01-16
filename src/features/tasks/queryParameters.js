@@ -5,3 +5,7 @@ export const useQueryParameter = () => {
   const searchParams = new URLSearchParams(location.search);
   return searchParams.get(key);
 };
+
+export const useReplaceQueryParameter = () => {
+    
+};
