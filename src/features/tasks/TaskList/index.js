@@ -4,7 +4,6 @@ import {
   selectHideDoneTasks,
   toggleTaskDone,
   removeTask,
-  selectTaskByQuery,
 } from "../tasksSlice";
 import { useQueryParameter } from "../queryParameters";
 import searchQueryParamName from "../searchQueryParamName";
