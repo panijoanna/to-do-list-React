@@ -64,6 +64,10 @@ export const selectEveryDoneTasks = (state) =>
 
   export const selectTaskByQuery = (state, query) => {
     const tasks = selectTasks(state);
+
+    if (!query || query.trim() === "") {
+      return tasks;
+    }
   }
 
 export const load = (state) => selectTasksState(state).loading;
