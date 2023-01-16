@@ -4,7 +4,7 @@ import { StyledInput } from "./styled";
 
 const SearchInput = () => {
   const query = useQueryParameter(searchQueryParamName);
-  const useReplaceQueryParameter = useReplaceQueryParameter();
+  const replaceQueryParameter = useReplaceQueryParameter();
   return (
     <StyledInput
       required
