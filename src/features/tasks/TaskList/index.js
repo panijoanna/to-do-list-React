@@ -7,10 +7,12 @@ import {
   selectTaskByQuery,
 } from "../tasksSlice";
 import { useQueryParameter } from "../queryParameters";
+import searchQueryParamName from "../searchQueryParamName";
+import { selectTaskByQuery } from "../tasksSlice";
 
 const TaskList = () => {
   const query = useQueryParameter(searchQueryParamName);
-  const tasks = useSelector(state => selectTaskByQuery(state, query));
+  const tasks = useSelector((state) => selectTaskByQuery(state, query));
   const hideDoneTasks = useSelector(selectHideDoneTasks);
 
   const dispatch = useDispatch();
