@@ -7,6 +7,16 @@ export const useQueryParameter = () => {
 };
 
 export const useReplaceQueryParameter = () => {
-    const location = useLocation();
-    const navigate = useNavigate();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  return ({ key, value }) => {
+    const searchParams = new URLSearchParams(location.search);
+
+    if (value === undefined) {
+      searchParams.delete(key);
+    } else {
+      searchParams.set(key, value);
+    }
+  };
 };
