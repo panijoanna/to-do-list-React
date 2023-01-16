@@ -5,12 +5,13 @@ import {
   selectTasks,
   toggleTaskDone,
   removeTask,
+  selectTaskByQuery,
 } from "../tasksSlice";
 import { useQueryParameter } from "../queryParameters";
 
 const TaskList = () => {
   const query = useQueryParameter(searchQueryParamName);
-  const tasks = useSelector(selectTasks);
+  const tasks = useSelector(state => selectTaskByQuery(state, query));
   const hideDoneTasks = useSelector(selectHideDoneTasks);
 
   const dispatch = useDispatch();
