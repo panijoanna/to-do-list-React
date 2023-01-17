@@ -1,14 +1,14 @@
-import { NavigationLink, NavLists, NavUl, StyledNavigation } from "./styled";
+import { NavigationLink, NavLists, NavList, StyledNavigation } from "./styled";
 
 const Navigation = () => {
   return (
     <StyledNavigation>
-      <NavUl>
+      <NavList>
         <NavLists bolded>Zadania</NavLists>
         <NavLists>
           <NavigationLink to="/o-autorze">O autorze</NavigationLink>
         </NavLists>
-      </NavUl>
+      </NavList>
     </StyledNavigation>
   );
 };

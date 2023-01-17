@@ -8,7 +8,7 @@ export const StyledNavigation = styled.nav`
   width: 100%;
 `;
 
-export const NavUl = styled.ul`
+export const NavList = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: row;
