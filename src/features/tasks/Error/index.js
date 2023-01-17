@@ -1,3 +1,6 @@
+import Header from "../../../common/Header";
+import Section from "../../../common/Section";
+
 const Error = () => {
   return (
     <>
