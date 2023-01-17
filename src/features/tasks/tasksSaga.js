@@ -11,7 +11,7 @@ import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 function* fetchExampleTasksHandler() {
   try {
     const exampleTasks = yield call(getExampleTasks);
-    yield delay(1000);
+    yield delay(500);
     yield put(fetchExampleSuccess(exampleTasks));
   } catch (error) {
     yield put(fetchExampleError());
