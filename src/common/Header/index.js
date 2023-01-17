@@ -1,7 +1,7 @@
 import { Heading } from "./styled";
 
 const Header = ({ title }) => (
-  <header className="header">
+  <header>
     <Heading>{title}</Heading>
   </header>
 );
