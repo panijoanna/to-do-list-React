@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import Header from "../../../common/Header";
-import Section from "../../../common/Section";
+import Header from "../../common/Header";
+import Section from "../../common/Section";
 import { useSelector } from "react-redux";
-import { getTaskById } from "../tasksSlice";
-import Navigation from "../../../Navigation";
+import { getTaskById } from "../tasks/tasksSlice";
+import Navigation from "../../Navigation";
 
-const Error = () => {
+const TaskDetails = () => {
   const { id } = useParams();
   const task = useSelector((state) => getTaskById(state, id));
   return (
@@ -26,4 +26,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default TaskDetails;
