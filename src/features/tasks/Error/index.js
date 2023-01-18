@@ -1,7 +1,10 @@
+import { useParams } from "react-router-dom";
 import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 
 const Error = () => {
+  const {id} = useParams();
+  const task = useSelector(state => getTaskById(state, id));
   return (
     <>
       <Header title="Szczegóły zadania" />
