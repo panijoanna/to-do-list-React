@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectHideDoneTasks, toggleTaskDone, removeTask } from "../tasksSlice";
 import { selectTaskByQuery } from "../tasksSlice";
 import { useLocation } from "react-router-dom";
+import { StyledLink } from "../../../Navigation/styled";
 
 const TaskList = () => {
   const location = useLocation();
@@ -20,7 +21,9 @@ const TaskList = () => {
           <Button toggleDone onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? "✓" : ""}
           </Button>
-          <Content done={task.done}>{task.content}</Content>
+          <Content done={task.done}>
+            <StyledLink to={`/szczegóły/${task.id}`}>{task.content}</StyledLink>
+          </Content>
           <Button remove onClick={() => dispatch(removeTask(task.id))}>
             🗑
           </Button>
