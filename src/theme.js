@@ -15,6 +15,7 @@ export const theme = {
     crimson: "#DB143C",
     coral: "#FC3545",
     amaranth: "#EC365A",
+    black: "#000000",
   },
   breakpoint: {
     mobileDevice: 767,
