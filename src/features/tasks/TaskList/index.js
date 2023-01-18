@@ -8,8 +8,10 @@ import {
 import { useQueryParameter } from "../queryParameters";
 import searchQueryParamName from "../searchQueryParamName";
 import { selectTaskByQuery } from "../tasksSlice";
+import { useLocation } from "react-router-dom";
 
 const TaskList = () => {
+  const location = useLocation();
   const query = useQueryParameter(searchQueryParamName);
   const tasks = useSelector((state) => selectTaskByQuery(state, query));
   const hideDoneTasks = useSelector(selectHideDoneTasks);
