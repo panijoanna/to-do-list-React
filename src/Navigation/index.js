@@ -4,7 +4,9 @@ const Navigation = () => {
   return (
     <StyledNavigation>
       <NavList>
-        <NavLists bolded>Zadania</NavLists>
+        <NavLists bolded>
+          <NavigationLink to="/to-do-list-React">Zadania</NavigationLink>
+        </NavLists>
         <NavLists>
           <NavigationLink to="/o-autorze">O autorze</NavigationLink>
         </NavLists>
