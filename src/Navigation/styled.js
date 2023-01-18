@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.black};
+`;
 
 export const StyledNavigation = styled.nav`
   background-color: ${({ theme }) => theme.color.skobeloff};
