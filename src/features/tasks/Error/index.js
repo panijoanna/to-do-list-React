@@ -7,6 +7,7 @@ const Error = () => {
   const task = useSelector(state => getTaskById(state, id));
   return (
     <>
+    <Navigation/>
       <Header title="Szczegóły zadania" />
       <Section
         title={task ? task.content : "Nie ma takiego zadania"}
