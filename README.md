@@ -13,16 +13,12 @@ https://panijoanna.github.io/to-do-list-React/
 1. Accessible & semantic HTML, Markdown
 2. CSS (BEM convention, Flexbox, Grid)
 3. Javascript/ES6 + features (immutability)
-4. React (hooks: useState, useEffect, useRef, custom hooks, localStorage, functional components, styled components, npm, webpack, router)
+4. React (hooks: useState, useEffect, useRef, custom hooks, localStorage, functional components, styled components, npm, webpack, router 6)
 5. Redux (hooks: useSelector, useDispatch, selectors, dispatch, reducers)
 6. GIT (basic Git version control system commands)
 
 ## ✅ Instruction
-![todolist gif](https://user-images.githubusercontent.com/105354955/202869873-8f8128dc-ffee-4a31-bd03-2c0ade919311.gif)
-
-## ✅ Presentation
-![share](https://user-images.githubusercontent.com/105354955/211157518-5d92a79d-e056-4016-803e-23f43ac1f990.png)
-
+![lista](https://user-images.githubusercontent.com/105354955/213544700-944ac44f-777b-4a20-aeec-a622cb59d68f.gif)
 
 ## ✅ Available Scripts 
 
