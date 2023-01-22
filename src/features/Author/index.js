@@ -16,7 +16,7 @@ const Author = () => {
             <NavigationLink to="/to-do-list-React">Zadania</NavigationLink>
           </NavLists>
           <NavLists bolded>
-            <NavigationLink to="/o autorze">O autorze</NavigationLink>
+            <NavigationLink to="/o-autorze">O autorze</NavigationLink>
           </NavLists>
         </NavList>
       </StyledNavigation>
