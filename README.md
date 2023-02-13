@@ -1,7 +1,7 @@
 # 📁 To-do-list/React/Redux ✍
 
 ## ✅ Introduction 
-Simple to-do list. You can add, delete, or mark as done task.
+Simple to-do list. You can add, delete, or mark as done task. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,7 +14,7 @@ https://panijoanna.github.io/to-do-list-React/
 2. CSS (BEM convention, Flexbox, Grid)
 3. Javascript/ES6 + features (immutability)
 4. React (hooks: useState, useEffect, useRef, custom hooks, localStorage, functional components, styled components, npm, webpack, router 6)
-5. Redux (hooks: useSelector, useDispatch, selectors, dispatch, reducers)
+5. Redux, Redux Saga, Redux Toolkit (hooks: useSelector, useDispatch, selectors, dispatch, reducers)
 6. GIT (basic Git version control system commands)
 
 ## ✅ Instruction
