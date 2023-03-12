@@ -25,10 +25,10 @@ const Author = () => {
       <Section
         body={
           <>
-            Mam na imię Asia👩‍💻. <strong>Zafascynowana</strong> technologiami <strong>frontendowymi</strong> z pasji. Z
-            wykształcenia rekruterka. Japońskie sztuki walki to moje hobby.
-            Trenuję karate. W przyszłości chciałabym polecieć do Japonii i zjeść
-            prawdziwy ramen.
+            Mam na imię Asia👩‍💻. <strong>Zafascynowana</strong> technologiami{" "}
+            <strong>frontendowymi</strong> z pasji. Z wykształcenia rekruterka.
+            Japońskie sztuki walki to moje hobby. Trenuję karate. W przyszłości
+            chciałabym polecieć do Japonii i zjeść prawdziwy ramen.
           </>
         }
       ></Section>
