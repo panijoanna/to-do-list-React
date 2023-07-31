@@ -1,4 +1,9 @@
-## 📁 To-do-list | React | Redux 
+## 📁 To Do List
+
+### Used technologies & features:
+`
+React | Redux | Redux Saga | Redux Toolkit | Styled components
+`
 
 ### Description
 Simple to-do list. You can add, delete, or mark as done task. 
