@@ -1,26 +1,26 @@
 ## 📁 To Do List
 
-### Used technologies & features:
-`
-React | Redux | Redux Saga | Redux Toolkit | Styled components
-`
+🔗 https://panijoanna.github.io/to-do-list-React/
 
-### Description
+
+#### Description
 Simple to-do list. You can add, delete, or mark as done task. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Tech stack:
+```
+HTML5 & CSS3
+Styled-Components
+React & Redux, Redux Saga, Redux Toolkit
+```
 
-### Demo 
-https://panijoanna.github.io/to-do-list-React/
-
-### Preview
+#### Preview
 ![lista](https://user-images.githubusercontent.com/105354955/213544700-944ac44f-777b-4a20-aeec-a622cb59d68f.gif)
 
-### Available Scripts 
+#### Available Scripts 
 
 In the project directory, you can run:
 
-### `npm start` 
+#### `npm start` 
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -28,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -38,7 +38,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
