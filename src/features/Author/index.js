@@ -21,14 +21,22 @@ const Author = () => {
         </NavList>
       </StyledNavigation>
       <Header title="O autorze"></Header>
-      <Section title="Joanna Panimasz"></Section>
+      <Section title="Joanna Panimasz" />
       <Section
         body={
           <>
-            Mam na imię Asia👩‍💻. <strong>Zafascynowana</strong> technologiami{" "}
-            <strong>frontendowymi</strong> z pasji. Z wykształcenia rekruterka.
-            Japońskie sztuki walki to moje hobby. Trenuję karate. W przyszłości
-            chciałabym polecieć do Japonii i zjeść prawdziwy ramen.
+            Mam na imię Joanna. Jestem programistką Front-end, pasjonatką
+            technologii i branży IT. Zawsze stawiam sobie ambitne cele i dążę do
+            ich realizacji z maksymalną starannością. Moja pasja do
+            programowania narodziła się, gdy projektowałam różnego rodzaju
+            grafiki. Zafascynowało mnie, jak działa to, co projektuję, i ta
+            ciekawość poprowadziła mnie w stronę programowania. Front-end
+            Development daje mi ogromną satysfakcję, ponieważ pozwala tworzyć
+            funkcjonalne rozwiązania, które są użyteczne dla innych. Ponadto,
+            lubię widzieć efekty pracy, co daje mi motywację do dalszego
+            działania i udoskonalenia. Każdy projekt to dla mnie okazja do
+            nauki, nieustannego rozwoju, co sprawia, że praca w tej branży jest
+            nie tylko satysfakcjonująca, ale również pełna wyzwań i inspiracji.
           </>
         }
       ></Section>
