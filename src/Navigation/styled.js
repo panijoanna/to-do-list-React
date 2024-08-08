@@ -3,14 +3,14 @@ import { NavLink, Link } from "react-router-dom";
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.gableGreen};
 `;
 
 export const StyledNavigation = styled.nav`
-  background-color: ${({ theme }) => theme.color.skobeloff};
-  color: white;
-  padding: 10px 0;
+  background-color: ${({ theme }) => theme.color.tundora};
+  padding: 14px 0;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
 export const NavList = styled.ul`
@@ -18,6 +18,7 @@ export const NavList = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 0;
   margin: 0;
@@ -34,10 +35,11 @@ export const NavLists = styled.li`
     `}
 
   &:hover {
-    filter: brightness(90%); 
+    filter: brightness(95%); 
 `;
 
 export const NavigationLink = styled(NavLink)`
   text-decoration: none;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.color.white};
 `;
