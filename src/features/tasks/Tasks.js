@@ -17,7 +17,7 @@ function Tasks() {
         body={<Form />}
         extraHeaderContent={<Button />}
       />
-      <Section title="Wyszukiwarka" body={<SearchInput />} />
+      <Section title="Wyszukaj zadania" body={<SearchInput />} />
       <Section
         title="Lista zadań"
         body={<TaskList />}

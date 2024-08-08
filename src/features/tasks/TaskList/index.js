@@ -4,6 +4,7 @@ import { selectHideDoneTasks, toggleTaskDone, removeTask } from "../tasksSlice";
 import { selectTaskByQuery } from "../tasksSlice";
 import { useLocation } from "react-router-dom";
 import { StyledLink } from "../../../Navigation/styled";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const TaskList = () => {
   const location = useLocation();
@@ -19,13 +20,13 @@ const TaskList = () => {
       {tasks.map((task) => (
         <Item key={task.id} hidden={task.done && hideDoneTasks}>
           <Button toggleDone onClick={() => dispatch(toggleTaskDone(task.id))}>
-            {task.done ? "✓" : ""}
+            {task.done ? <Icon icon="weui:done-filled" /> : ""}
           </Button>
           <Content done={task.done}>
             <StyledLink to={`/szczegóły/${task.id}`}>{task.content}</StyledLink>
           </Content>
           <Button remove onClick={() => dispatch(removeTask(task.id))}>
-            🗑
+            <Icon icon="bitcoin-icons:cross-filled" />
           </Button>
         </Item>
       ))}

@@ -18,7 +18,7 @@ const SearchInput = () => {
   return (
     <StyledInput
       required
-      placeholder="🔍Wyszukaj w liście zadań"
+      placeholder="Wyszukaj zadania..."
       autoComplete="off"
       onChange={onInputChange}
       value={query || ""}

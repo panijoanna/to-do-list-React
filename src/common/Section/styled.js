@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   background-color: ${({ theme }) => theme.color.white};
-  box-shadow: 0 2px ${({ theme }) => theme.color.galery};
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  max-width: 900px;
-  margin: 10px auto;
-  border: 1px solid ${({ theme }) => theme.color.mercury};
+  margin: 10px 100px;
   padding: 5px 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     max-width: 90%;
+    margin: 10px auto;
   }
 `;
 
@@ -28,7 +28,7 @@ export const SectionHeader = styled.header`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 0;
+    padding: 0 0 0 12px;
   }
 `;
 
