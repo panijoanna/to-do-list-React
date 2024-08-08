@@ -10,20 +10,26 @@ export const StyledForm = styled.form`
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
 `;
 
 export const Input = styled.input`
-  padding: 8px;
+  padding: 12px;
   width: 100%;
   display: flex;
   align-self: center;
-  border: 2px solid ${({ theme }) => theme.color.mercury};
+  border: none;
+  background: ${({ theme }) => theme.color.gray};
+  border-radius: 8px;
+  font-size: 14px;
 `;
 
 export const FormButton = styled.button`
-  background-color: ${({ theme }) => theme.color.skobeloff};
+  background-color: ${({ theme }) => theme.color.cornFlowerBlue};
   color: ${({ theme }) => theme.color.white};
+  border-radius: 8px;
+  font-weight: 500;
   padding: 10px;
   margin-left: 20px;
   border: none;
@@ -32,7 +38,7 @@ export const FormButton = styled.button`
   transition: 0.5s;
 
   &:hover {
-    background: ${({ theme }) => theme.color.cerulean};
+    filter: brightness(95%);
     transform: scale(1.1);
   }
 

@@ -34,7 +34,7 @@ const Form = () => {
         required
         type="text"
         name="lista"
-        placeholder="Co jest do zrobienia?"
+        placeholder="Dodaj zadanie..."
         maxLength="70"
         autoComplete="off"
         onChange={({ target }) => setNewTaskContent(target.value)}
