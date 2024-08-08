@@ -12,11 +12,14 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    background-color: ${({ theme }) => theme.color.galery};
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    margin: 0 auto;
+    background-color: ${({ theme }) => theme.color.gray};
+    color: ${({ theme }) => theme.color.mineShaft};
+    font-family: 'proxima-nova', sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    margin: 0 auto 50px auto;
     overflow-y: scroll;
+    line-height: 1.6;
   }
   
 `;
