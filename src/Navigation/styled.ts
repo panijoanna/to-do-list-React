@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components";
 import { NavLink, Link } from "react-router-dom";
+import { ComponentProps } from "react";
+
+interface BoldItem extends ComponentProps<"li"> {
+  bolded?: boolean;
+}
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
@@ -24,7 +29,7 @@ export const NavList = styled.ul`
   margin: 0;
 `;
 
-export const NavLists = styled.li`
+export const NavLists = styled.li<BoldItem>`
   font-size: 14px;
   padding: 5px;
 
