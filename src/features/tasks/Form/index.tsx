@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, FormEventHandler } from "react";
 import { StyledForm, Input, FormButton } from "./styled";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
@@ -9,9 +9,9 @@ const Form = () => {
 
   const dispatch = useDispatch();
 
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  const onFormSubmit = (event) => {
+  const onFormSubmit: FormEventHandler = (event) => {
     event.preventDefault();
 
     dispatch(
@@ -23,7 +23,9 @@ const Form = () => {
     );
 
     setNewTaskContent("");
-    inputRef.current.focus();
+    if (inputRef.current) {
+      inputRef.current.focus()
+    };
   };
 
   return (
@@ -35,7 +37,7 @@ const Form = () => {
         type="text"
         name="lista"
         placeholder="Dodaj zadanie..."
-        maxLength="70"
+        maxLength={70}
         autoComplete="off"
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
