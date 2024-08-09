@@ -7,9 +7,9 @@ import {
 } from "./styled";
 
 interface SectionItems {
-  title: string;
-  body: ReactNode;
-  extraHeaderContent: ReactNode;
+  title?: string;
+  body?: ReactNode;
+  extraHeaderContent?: ReactNode;
 }
 
 const Section = ({ title, body, extraHeaderContent }: SectionItems) => (
