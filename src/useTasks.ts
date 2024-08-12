@@ -1,35 +1,36 @@
 import { useEffect, useState } from "react";
+import { Tasks } from "./types";
 
-const getTasks = () => {
+const getTasks = (): Tasks[] => {
   const localStorageTasks = localStorage.getItem("tasks");
 
   return localStorageTasks ? JSON.parse(localStorageTasks) : [];
 };
 
 export const useTasks = () => {
-  const [tasks, setTasks] = useState(getTasks);
+  const [tasks, setTasks] = useState<Tasks[]>(getTasks);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  const removeTask = (id) => {
+  const removeTask = (id: number): void => {
     setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
 
-  const toggleTaskDone = (id) => {
+  const toggleTaskDone = (id: number): void => {
     setTasks((tasks) =>
       tasks.map((task) => {
         if (task.id === id) {
           return { ...task, done: !task.done };
         }
-
+        
         return task;
       })
     );
   };
 
-  const toggleAllTaskDone = () => {
+  const toggleAllTaskDone = (): void => {
     setTasks((tasks) =>
       tasks.map((task) => ({
         ...task,
@@ -38,7 +39,7 @@ export const useTasks = () => {
     );
   };
 
-  const addTask = (content) => {
+  const addTask = (content: string): void => {
     setTasks((tasks) => [
       ...tasks,
       {
