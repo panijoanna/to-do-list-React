@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { GlobalStyle } from "./core/GlobalStyle";
 import { theme } from "./core/theme";
 import { ThemeProvider } from "styled-components";
-import store from "./store.js";
+import store from "./store";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 
