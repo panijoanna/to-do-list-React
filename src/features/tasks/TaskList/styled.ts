@@ -1,5 +1,12 @@
 import styled, { css } from "styled-components";
 
+interface TaskActions {
+  hidden?: boolean;
+  done?: boolean;
+  toggleDone?: boolean;
+  remove?: boolean;
+}
+
 export const List = styled.ul`
   list-style: none;
   margin: 0;
@@ -7,7 +14,7 @@ export const List = styled.ul`
   word-break: break-word;
 `;
 
-export const Item = styled.li`
+export const Item = styled.li<TaskActions>`
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-gap: 10px;
@@ -22,7 +29,7 @@ export const Item = styled.li`
     `}
 `;
 
-export const Content = styled.span`
+export const Content = styled.span<TaskActions>`
   ${({ done }) =>
     done &&
     css`
@@ -30,7 +37,7 @@ export const Content = styled.span`
     `}
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<TaskActions>`
   display: flex;
   align-items: center;
   border: none;

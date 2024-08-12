@@ -17,7 +17,7 @@ const TaskList = () => {
 
   return (
     <List>
-      {tasks.map((task) => (
+      {tasks.map((task: any) => (
         <Item key={task.id} hidden={task.done && hideDoneTasks}>
           <Button toggleDone onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? <Icon icon="weui:done-filled" /> : ""}
