@@ -45,8 +45,8 @@ export const useTasks = () => {
       {
         content,
         done: false,
-        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
-      },
+        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id as number + 1,
+      } as Tasks,
     ]);
   };
 
