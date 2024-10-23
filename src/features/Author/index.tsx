@@ -1,9 +1,4 @@
-import {
-  NavigationLink,
-  NavLists,
-  StyledNavigation,
-  NavList,
-} from "../../Navigation/styled";
+import { NavList, NavLists, NavigationLink, StyledNavigation } from "../../Navigation/styled";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
 

@@ -4,10 +4,13 @@ import Section from "../../common/Section";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasks/tasksSlice";
 import Navigation from "../../Navigation";
+import { TasksState } from "../../types";
 
 const TaskDetails = () => {
   const { id } = useParams();
-  const task = useSelector((state) => getTaskById(state, id));
+  const task = useSelector((state: { tasks: TasksState }) =>
+    getTaskById(state, id!)
+  );
   return (
     <>
       <Navigation />
