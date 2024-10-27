@@ -9,8 +9,9 @@ Simple to-do list. You can add, delete, or mark as done task.
 #### Tech stack:
 ```
 HTML5 & CSS3
-Styled-Components
+TypeScript
 React & Redux, Redux Saga, Redux Toolkit
+Styled-Components
 ```
 
 #### Preview
