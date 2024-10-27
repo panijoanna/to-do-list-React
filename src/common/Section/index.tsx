@@ -6,13 +6,13 @@ import {
   SectionContainer,
 } from "./styled";
 
-interface SectionItems {
+interface SectionProps {
   title?: string;
   body?: ReactNode;
   extraHeaderContent?: ReactNode;
 }
 
-const Section = ({ title, body, extraHeaderContent }: SectionItems) => (
+const Section = ({ title, body, extraHeaderContent }: SectionProps) => (
   <StyledSection>
     <SectionHeader>
       <SectionHeading>{title}</SectionHeading>

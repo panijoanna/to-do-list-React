@@ -1,4 +1,9 @@
-import { NavList, NavLists, NavigationLink, StyledNavigation } from "../../Navigation/styled";
+import {
+  NavList,
+  NavLists,
+  NavigationLink,
+  StyledNavigation,
+} from "../../Navigation/styled";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
 
@@ -20,18 +25,19 @@ const Author = () => {
       <Section
         body={
           <>
-            Mam na imię Joanna. Jestem programistką Front-end, pasjonatką
-            technologii i branży IT. Zawsze stawiam sobie ambitne cele i dążę do
-            ich realizacji z maksymalną starannością. Moja pasja do
-            programowania narodziła się, gdy projektowałam różnego rodzaju
-            grafiki. Zafascynowało mnie, jak działa to, co projektuję, i ta
-            ciekawość poprowadziła mnie w stronę programowania. Front-end
-            Development daje mi ogromną satysfakcję, ponieważ pozwala tworzyć
-            funkcjonalne rozwiązania, które są użyteczne dla innych. Ponadto,
-            lubię widzieć efekty pracy, co daje mi motywację do dalszego
-            działania i udoskonalenia. Każdy projekt to dla mnie okazja do
-            nauki, nieustannego rozwoju, co sprawia, że praca w tej branży jest
-            nie tylko satysfakcjonująca, ale również pełna wyzwań i inspiracji.
+            Mam na imię Joanna i jestem frontend developerką. Programowaniem
+            zajmuję się od 2020 roku – to wtedy po raz pierwszy połączyłam
+            kreatywność z technologią, co szybko stało się moją pasją. Wcześniej
+            pracowałam jako grafik, gdzie rozwijałam umiejętności w
+            projektowaniu wizualnym. Z czasem jednak zaczęłam poszukiwać
+            rozwiązań, dzięki którym moje projekty byłyby nie tylko estetyczne,
+            ale również interaktywne i angażujące. <br />
+            Od tamtej pory miałam okazję pracować z wieloma technologiami,
+            takimi jak: React, Redux, Vue3, Pinia, Angular, NgRx, JavaScript,
+            TypeScript, REST API, GraphQL, NestJS, Next.js oraz narzędziami UI:
+            Styled-components, Figma, Bootstrap, TailwindCSS i Material UI.
+            <br />
+            Obecnie stale rozwijam swoje umiejętności techniczne.
           </>
         }
       ></Section>

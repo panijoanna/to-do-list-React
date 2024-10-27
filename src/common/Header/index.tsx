@@ -1,10 +1,10 @@
 import { Heading } from "./styled";
 
-interface HeaderTitle {
+interface HeaderProps {
   title: string;
 }
 
-const Header = ({ title }: HeaderTitle) => (
+const Header = ({ title }: HeaderProps) => (
   <header>
     <Heading>{title}</Heading>
   </header>
