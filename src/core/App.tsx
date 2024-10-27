@@ -1,8 +1,8 @@
-import Tasks from "./features/tasks/Tasks";
+import Tasks from "../features/tasks/Tasks";
 import { Route, Routes } from "react-router-dom";
-import Author from "./features/Author";
-import { toAuthor, toTask, toDetails } from "./routes";
-import TaskDetails from "./features/taskDetails";
+import Author from "../features/Author";
+import { toAuthor, toTask, toDetails } from "../routes";
+import TaskDetails from "../features/taskDetails";
 
 const App = () => (
   <Routes>

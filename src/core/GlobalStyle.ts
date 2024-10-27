@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
+import { Theme } from "./theme";
 
-export const GlobalStyle = createGlobalStyle`
+
+export const GlobalStyle = createGlobalStyle<Theme>`
   html {
     box-sizing: border-box;
   }

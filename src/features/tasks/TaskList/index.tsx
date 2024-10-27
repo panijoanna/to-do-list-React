@@ -5,19 +5,22 @@ import { selectTaskByQuery } from "../tasksSlice";
 import { useLocation } from "react-router-dom";
 import { StyledLink } from "../../../Navigation/styled";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { TasksState } from "../../../types";
 
 const TaskList = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search).get("szukaj");
 
-  const tasks = useSelector((state) => selectTaskByQuery(state, query));
+  const tasks = useSelector((state: { tasks: TasksState }) =>
+    selectTaskByQuery(state, query)
+  );
   const hideDoneTasks = useSelector(selectHideDoneTasks);
 
   const dispatch = useDispatch();
 
   return (
     <List>
-      {tasks.map((task) => (
+      {tasks.map((task: any) => (
         <Item key={task.id} hidden={task.done && hideDoneTasks}>
           <Button toggleDone onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? <Icon icon="weui:done-filled" /> : ""}
