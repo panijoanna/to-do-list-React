@@ -1,10 +1,9 @@
 ## 📁 To Do List
 
-🔗 https://panijoanna.github.io/to-do-list-React/
-
-
 #### Description
 Simple to-do list. You can add, delete, or mark as done task. 
+
+🔗 https://panijoanna.github.io/to-do-list-React/
 
 #### Tech stack:
 ```
